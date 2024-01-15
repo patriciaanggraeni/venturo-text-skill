@@ -51,7 +51,7 @@ class MainApp extends StatelessWidget {
                     child: Container(
                       height: 200,
                       width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                               color: Color(0xFFEDEDED),
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(20.0),

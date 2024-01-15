@@ -19,12 +19,10 @@ class CounterController extends GetxController {
     }
   }
 
-  // Update total harga berdasarkan kuantitas dan harga per item
   void updateTotalPrice(Menu menu, int quantity) {
     int totalHarga = menu.harga * quantity;
     totalPrice.value = totalHarga;
 
-    // Perbarui atau tambahkan menu ke daftar yang dipilih
     int existingIndex = selectedMenus.indexWhere((item) => item.id == menu.id);
     if (existingIndex != -1) {
       selectedMenus[existingIndex] = Menu(
